@@ -31,7 +31,7 @@ function setCanvas(){
     canvas.setAttribute("width", STAGE_WIDTH);
     canvas.setAttribute("height", STAGE_HEIGHT);
 
-    clearStage();
+    
 }
 
 function clearStage(){
@@ -49,7 +49,7 @@ function frameUpdate(){
     setTimeout(frameUpdate, 100);
     clearStage();
     food.show();
-    snake.death();
+    snake.death
     snake.update();
     snake.show();    
     if(snake.eat(food)){
