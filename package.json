@@ -1,0 +1,27 @@
+{
+  "name": "jun-coading-challange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "PORT=5555 supervisor index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kim0jun@github.com/kim0jun/Coading-Chanllange.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kim0jun/Coading-Chanllange/issues"
+  },
+  "homepage": "https://github.com/kim0jun/Coading-Chanllange#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-livereload": "^3.8.1"
+  }
+}
