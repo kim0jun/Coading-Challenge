@@ -1,5 +1,5 @@
 {
-  "name": "jun-coading-challange",
+  "name": "jun-coading-challenge",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://kim0jun@github.com/kim0jun/Coading-Chanllange.git"
+    "url": "git+https://kim0jun@github.com/kim0jun/Coading-Challenge.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kim0jun/Coading-Chanllange/issues"
+    "url": "https://github.com/kim0jun/Coading-Challenge/issues"
   },
-  "homepage": "https://github.com/kim0jun/Coading-Chanllange#readme",
+  "homepage": "https://github.com/kim0jun/Coading-Challenge#readme",
   "dependencies": {
     "body-parser": "^1.17.1",
     "ejs": "^2.5.6",
