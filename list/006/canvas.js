@@ -14,7 +14,7 @@ window.onload = function(){
 }
 
 function addKeyEventHandler(){
-    document.addEventListener("click",mousePressed);
+    // document.addEventListener("click",mousePressed);
 }
 
 function setCanvas(){
@@ -26,12 +26,12 @@ function setCanvas(){
 }
 
 function clearStage(){
-    ctx.fillStyle = 'rgb(51,51,51)'; 
+    ctx.fillStyle = 'rgb(0,0,0)'; 
     ctx.fillRect(0, 0, STAGE_WIDTH, STAGE_HEIGHT);
 }
 
 function setItems(){
-    while(cells.length<5){
+    while(cells.length<10){
         cells.push(new Cell());
     }
     
@@ -61,7 +61,9 @@ function mousePressed(e){
     for(var i=cells.length;i > 0;i--){
         var cell = cells[i-1];
         var _dist = Math.sqrt(Math.pow(cell.x-_mouseX,2))+Math.sqrt(Math.pow(cell.y-_mouseY,2));
-        if(_dist<cell.radius)
+        if(_dist<cell.radius){
+            cell.clicked()
             cells.push(cell.clicked());
+        }
     }
 }
