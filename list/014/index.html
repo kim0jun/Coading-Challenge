@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="canvas.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="slider.js"></script>
+    <title>Document</title>
+</head>
+<body><!-- css	 -->
+	<style>
+		/* 컨테이너 높이, 위치 커스텀할것  */
+		#ui-slider              {position: relative;width:150px;height:14px;margin-bottom: 5px;}
+		.slider 				{position:absolute;}
+		.slider-bg				{position:absolute; top:50%;height: 7px; margin: -3.5px;border-radius: 3.5px;background: #ccc;box-shadow:  inset 0 0 2px #000000;}
+		.slider-ball-container  {position:absolute; width:140px; height:100%;left:0%;top:0%;pointer-events:none;}
+		.slider-ball 			{position:absolute; border: 1px solid #999;;background: #ddd}
+		.slider-hit-area		{position:absolute; width:100%; height:100%;left:0%;top:0%;cursor:pointer;}
+	</style>
+	<!-- html -->
+    <script type="text/javascript">
+
+		//ballRadius,id(container-id)는 필수값
+
+        var mosaicScale = 1;
+
+		new ARSlider({id:"ui-slider",ballRadius:7,update:function(value){
+            var newVal = (Math.floor(value*10)+1);
+            if(newVal !=mosaicScale){
+                mosaicScale =newVal;
+                canvas.mosaic(mosaicScale);
+                
+            }
+		}})
+		
+		
+	</script>
+    
+</body>
+</html>

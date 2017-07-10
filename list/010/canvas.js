@@ -1,8 +1,8 @@
 
 const STAGE_WIDTH  = 400;
 const STAGE_HEIGHT = 400;
-var cell_w  = 20 ;
-var cell_h  = 20 ;
+var cell_w  = 10 ;
+var cell_h  = 10 ;
 var cell_length = 10;
 var grid = [];
 var stack = [];
@@ -45,6 +45,10 @@ function setItems(){
          grid.push(new Cell(j,i,cell_w,cell_h));
     
     current = grid[0];
+    console.log(s);
+    for(var x=0;x<col_length+row_length;x++){
+        console.log(x);
+    }
 }
 
 function draw(){
