@@ -7,7 +7,7 @@ var Branch = function(parent,pos,dir){
     this.len = 5
 
     this.reset = function(){
-        this.dir = Object.assign({},this.origDir);
+        // this.dir = Object.assign({},this.origDir);
         this.count = 0; 
     }
 

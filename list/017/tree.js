@@ -59,10 +59,12 @@ var Tree = function(){
             
         }
 
+        //브랜치와 너무가까운 나뭇잎을 제거 
         for(var i = 0;i<this.leaves.length;i++){
             if(this.leaves[i].reached == true) this.leaves.splice(i,1)
         }
 
+        //브랜치 방향 결정 
         for(var i = this.branches.length-1;i>= 0;i--){
             var _branch = this.branches[i]
             if(_branch.count>0){
